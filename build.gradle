@@ -23,8 +23,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-batch'
-//	implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
-	implementation 'org.springframework.data:spring-data-elasticsearch:4.0.0.RELEASE'
+	implementation 'org.springframework.data:spring-data-elasticsearch'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.elasticsearch:elasticsearch:7.6.2'
 	compileOnly 'org.projectlombok:lombok'
