@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class CollectPropertyTradesStep {
 
-    private final Integer CHUNK_SIZE = 1000;
+    private final Integer CHUNK_SIZE = 10;
 
     private final StepBuilderFactory stepBuilderFactory;
 

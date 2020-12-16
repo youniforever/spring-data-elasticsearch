@@ -16,12 +16,8 @@ public class CollectPropertyTradesReader {
     @StepScope
     @Bean("c.p.t.Reader")
     protected ItemReader<? extends Article> collectPropertyTradesReader() {
-        List<Article> collect = IntStream.range(0, 100)
-                .mapToObj(operand -> {
-                    Article article = new Article();
-                    article.setTitle(String.valueOf(operand));
-                    return article;
-                }).collect(Collectors.toList());
+        List<Article> collect = IntStream.range(0, 10000)
+                .mapToObj(operand -> new Article()).collect(Collectors.toList());
         return new ListItemReader<>(collect);
     }
 }
